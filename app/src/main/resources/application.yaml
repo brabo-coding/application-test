@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+spring:
+  application.name: tektonPoc
+  main.allow-bean-definition-overriding: true
+
+aws:
+  dynamodb:
+    target-region: us-east-1
+    target-endpoint: http://localhost:4569
+  accessKey: key
+  secretKey: secret
