@@ -30,7 +30,6 @@ class AppApplicationTests {
     void contextLoads() throws InterruptedException {
     	Thread.sleep(2000);
 		DynamoDB dynamoDB = new DynamoDB(amazonDynamoDB);
-
 		deleteTable("users", dynamoDB);
 
 		ProvisionedThroughput ptIndex = new ProvisionedThroughput().withReadCapacityUnits(10L)
